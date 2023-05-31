@@ -36,6 +36,7 @@ btnReiniciar.addEventListener('click', function () {
     harumi = 0;
     masao = 0;
     francieli = 0;
+    titulo.innerHTML = `Quem eras quem serei`
     loadQuestion();
 } )
 
