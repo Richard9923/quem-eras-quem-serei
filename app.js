@@ -22,7 +22,7 @@ let masao = 0;
 let francieli = 0;
 
 
-btnReiniciar.onclick = () => {
+btnReiniciar.addEventListener('click', function () {
     conteudo.style.display = "flex";
     conteudoFinish.style.display = "none";
     currentIndex = 0;
@@ -37,8 +37,9 @@ btnReiniciar.onclick = () => {
     masao = 0;
     francieli = 0;
     loadQuestion();
+} )
 
-}
+
 
 const questions = [
     {
@@ -229,9 +230,8 @@ function finish () {
         titulo.innerHTML = "Você tirou a Masao"
     }
     else {
-        const nomes = [ "Ronaldinho" ];
-      let random = nomes[Math.floor(Math.random() * 3)]
-      return titulo.innerHTML = `Você tirou o ${random}`
+        
+      return titulo.innerHTML = `Tu tirou todo mundo po`
     }
 
     
