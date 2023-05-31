@@ -36,7 +36,7 @@ btnReiniciar.addEventListener('click', function () {
     harumi = 0;
     masao = 0;
     francieli = 0;
-    titulo.innerHTML = `Quem eras quem serei`
+    titulo.innerHTML = `Quem eras quem serei. 2.0`
     loadQuestion();
 } )
 
@@ -231,14 +231,15 @@ function finish () {
         titulo.innerHTML = "Você tirou a Masao"
     }
     else {
-        
-      return titulo.innerHTML = `Tu tirou todo mundo po`
+      const nome = ["yuri", "maicon", "lucas" ]  
+      let nomeRandom = nome[Math.floor(Math.random() * 3)]
+      return titulo.innerHTML = `Você tirou ${nomeRandom}`;
+      
     }
 
     
 }
 
-console.log(marcel);
 
 function loadQuestion () {
 
