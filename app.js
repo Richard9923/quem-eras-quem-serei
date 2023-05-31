@@ -57,7 +57,7 @@ const questions = [
         question: "Qual o jogo que você menos gosta?",
         respostas: [
             { option: "aquele que não posso xingar alguem", correct:"yuri" },
-            { option: "pega pega no recrio da escola", correct:"harumi" },
+            { option: "pega pega no recreio da escola", correct:"harumi" },
             { option: "minecraft", correct:"maicon" },
             { option: "zelda", correct:"masao" },
             { option: "gosto de tudo que é merda", correct:"francieli" },
@@ -234,7 +234,7 @@ function finish () {
       const nome = ["yuri", "maicon", "lucas" ]  
       let nomeRandom = nome[Math.floor(Math.random() * 3)]
       return titulo.innerHTML = `Você tirou ${nomeRandom}`;
-      
+
     }
 
     
