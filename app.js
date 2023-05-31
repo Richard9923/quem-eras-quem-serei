@@ -178,6 +178,11 @@ function nextQuestion (e) {
         lucas++;
          
       }
+
+      else  if (e.target.getAttribute("data-correct") === "harumi") {
+        harumi++;
+         
+      }
        
 
 
@@ -228,7 +233,7 @@ function finish () {
         titulo.innerHTML = "Você tirou a Francieli"
     }
     else if (masao >= 3) {
-        titulo.innerHTML = "Você tirou a Masao"
+        titulo.innerHTML = "Você tirou o Masao"
     }
     else {
       const nome = ["yuri", "maicon", "lucas" ]  
