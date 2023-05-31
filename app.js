@@ -1,7 +1,7 @@
 const question = document.querySelector('.question')
 const conteudo = document.querySelector('.conteudo')
 const quantidade = document.querySelector('.quantidade')
-const btnReiniciar = document.querySelector('.btn-reiniciar')
+const btnReiniciar = document.querySelector('.btnreiniciar')
 const conteudoFinish = document.querySelector('.finish')
 const textoFinish = document.querySelector('.finish span')
 const respostas = document.querySelector('.respostas')
@@ -19,8 +19,26 @@ let yuri = 0;
 let kaua = 0;
 let harumi = 0;
 let masao = 0;
+let francieli = 0;
 
-console.log(marcel >= 1);
+
+btnReiniciar.onclick = () => {
+    conteudo.style.display = "flex";
+    conteudoFinish.style.display = "none";
+    currentIndex = 0;
+    marcel = 0;
+    lucas = 0;
+    richard = 0;
+    gabrieli = 0;
+    maicon = 0;
+    yuri = 0;
+    kaua = 0;
+    harumi = 0;
+    masao = 0;
+    francieli = 0;
+    loadQuestion();
+
+}
 
 const questions = [
     {
@@ -51,7 +69,7 @@ const questions = [
             { option: "apareço pra arranjar treta", correct: "lucas"},
             { option: "aquele que só fala o básico", correct: "richard"},
             { option: "apareço pra dar umas risada e mandar foto de gato de vez em quando", correct: "gabrieli"},
-            { option: "yrineu você não sabe nem eu", correct: "kaua"},
+            { option: "o que não gosta de patifação", correct: "kaua"},
         ],
     },
 
@@ -172,46 +190,46 @@ function nextQuestion (e) {
 console.log(textoFinish);
 
 function finish () {
-    if (marcel >= 2) {
+    if (marcel >= 3) {
         titulo.innerHTML = "Você tirou o Marcel"
     }
 
-   else if (maicon >= 2 ) {
+   else if (maicon >= 3 ) {
         titulo.innerHTML = "Você tirou o Maicon"
     }
 
-    else if (lucas >= 2 ) {
+    else if (lucas >= 3 ) {
         titulo.innerHTML = "Você tirou o Lucas"
     }
 
-    else if (yuri >= 2 ) {
+    else if (yuri >= 3 ) {
         titulo.innerHTML = "Você tirou o Yuri"
     }
 
-    else if (kaua >= 2 ) {
+    else if (kaua >= 3) {
         titulo.innerHTML = "Você tirou o Kaua"
     }
 
-    else if (gabrieli >= 2) {
+    else if (gabrieli >= 3) {
         titulo.innerHTML = "Você tirou a Gabrieli"
     }
 
-    else if (richard >= 2) {
+    else if (richard >= 3) {
         titulo.innerHTML = "Você tirou o Richard"
     }
 
-    else if (harumi >= 2) {
+    else if (harumi >= 3) {
         titulo.innerHTML = "Você tirou a Harumi"
     }
 
-    else if (francieli >= 2) {
+    else if (francieli >= 3) {
         titulo.innerHTML = "Você tirou a Francieli"
     }
-    else if (masao >= 2) {
+    else if (masao >= 3) {
         titulo.innerHTML = "Você tirou a Masao"
     }
     else {
-        const nomes = [ "Bolsonaro", "Lula" ];
+        const nomes = [ "Ronaldinho" ];
       let random = nomes[Math.floor(Math.random() * 3)]
       return titulo.innerHTML = `Você tirou o ${random}`
     }
