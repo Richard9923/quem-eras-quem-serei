@@ -105,7 +105,7 @@ const questions = [
             { option: "compro uma boneca de brinquedo", correct:"harumi" },
             { option: "compro um volante no aliexpress pra jogar com meu amigo Richard", correct:"maicon" },
             { option: "comprar um zeldinha ?", correct:"masao" },
-            { option: "vou viajar pro sul", correct:"francieli" && "lucas" },
+            { option: "vou viajar pelo sul", correct:"francieli" && "lucas" },
         ],
   
     },
