@@ -46,7 +46,7 @@ const questions = [
     {
         question: "No valorante você é quem?",
         respostas: [
-            { option: "O que joga muito", correct: "marcel" },
+            { option: "O que joga muito", correct: "marcel" && "yuri" },
             { option: "jogo nada mais penso que jogo", correct: "lucas"},
             { option: "jogo na minha como eu queria ", correct: "richard"},
             { option: "que jogo é esse ? ", correct: "gabrieli"},
@@ -114,7 +114,7 @@ const questions = [
         question: "tuas ultimas 24h de vida o que tu faz ?",
         respostas: [
             { option: "vou fazer uma stream", correct: "marcel" },
-            { option: "vou xingar o maicon", correct: "lucas"},
+            { option: "vou xingar o maicon", correct: "lucas" && "yuri"},
             { option: "eu me demito do meu trabalho", correct: "richard"},
             { option: "vou lá arranja trabalho pros meus colegas de trabalho", correct: "gabrieli"},
             { option: "mando uma foto da minha meia", correct: "kaua"},
