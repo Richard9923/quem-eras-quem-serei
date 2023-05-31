@@ -197,8 +197,6 @@ function nextQuestion (e) {
     }
 }
 
-console.log(textoFinish);
-
 function finish () {
     if (marcel >= 3) {
         titulo.innerHTML = "Você tirou o Marcel"
