@@ -105,7 +105,7 @@ const questions = [
             { option: "compro uma boneca de brinquedo", correct:"harumi" },
             { option: "compro um volante no aliexpress pra jogar com meu amigo Richard", correct:"maicon" },
             { option: "comprar um zeldinha ?", correct:"masao" },
-            { option: "vou viajar pro sul", correct:"francieli" },
+            { option: "vou viajar pro sul", correct:"francieli" && "lucas" },
         ],
   
     },
@@ -128,7 +128,7 @@ const questions = [
             { option: "mostrando a escola que eu estudo", correct:"harumi" },
             { option: "um video de promocoes na terabyte", correct:"maicon" },
             { option: "uma gameplay de zelda", correct:"masao" },
-            { option: "mostrando a decoração aqui de casa", correct:"francieli" },
+            { option: "mostrando o corredor estranho aqui de casa", correct:"francieli" && "lucas" },
         ],
   
     },
