@@ -183,9 +183,12 @@ function nextQuestion (e) {
         harumi++;
          
       }
+
+      else  if (e.target.getAttribute("data-correct") === "francieli") {
+        francieli++;
+         
+      }
        
-
-
     if (currentIndex < questions.length - 1) {
         currentIndex++;
         loadQuestion();
